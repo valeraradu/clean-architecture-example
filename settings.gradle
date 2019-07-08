@@ -1,0 +1,10 @@
+rootProject.name = 'clean-architecture-example'
+include ':core'
+include ':usecases'
+include ':dataproviders'
+include ':delivery'
+
+project(':core').projectDir = "$rootDir/core" as File
+project(':usecases').projectDir = "$rootDir/usecases" as File
+project(':dataproviders').projectDir = "$rootDir/dataproviders" as File
+project(':delivery').projectDir = "$rootDir/delivery" as File
